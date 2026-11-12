@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#ffffff", "on-background": "#1a1c1a", "on-error": "#ffffff", "primary": "#835500", "surface-container-lowest": "#ffffff", "tertiary-container": "#ff9b91", "on-secondary-container": "#006774", "on-error-container": "#93000a", "inverse-primary": "#ffb955", "inverse-on-surface": "#f1f1ed", "outline-variant": "#d7c3ae", "on-secondary-fixed-variant": "#004e59", "on-tertiary-fixed-variant": "#93000d", "surface-dim": "#dadad6", "secondary-container": "#69e8fe", "primary-fixed-dim": "#ffb955", "on-surface": "#1a1c1a", "surface-container-low": "#f4f4f0", "surface-container-highest": "#e2e3df", "secondary": "#006876", "surface-tint": "#835500", "on-secondary-fixed": "#001f24", "surface-variant": "#e2e3df", "background": "#faf9f5", "surface-container-high": "#e8e8e4", "on-primary-fixed": "#291800", "secondary-fixed": "#9eefff", "error-container": "#ffdad6", "secondary-fixed-dim": "#55d7ed", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#633f00", "surface-container": "#eeeeea", "surface": "#faf9f5", "on-secondary": "#ffffff", "on-primary-container": "#644000", "primary-container": "#f5a623", "on-surface-variant": "#524534", "tertiary": "#bb171c", "surface-bright": "#faf9f5", "error": "#ba1a1a", "tertiary-fixed": "#ffdad6", "tertiary-fixed-dim": "#ffb4ac", "primary-fixed": "#ffddb4", "inverse-surface": "#2f312e", "on-tertiary-container": "#94000d", "outline": "#857462", "on-tertiary-fixed": "#410002" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "space-md": "1rem", "gutter": "1rem", "space-xs": "0.25rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-xl": "2.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Siente Barranquilla Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrBuiXVLx0-dmWLpFmwRoe3h_Z67zqBlh5mpVVzDTnEGZXg8iPEnffqQM-OyH8BsuMHUm2mz8OBeBHFFBaXlWotMpv_t5YHo79KZOyvROA6rmeOhO6ap9RNorgjMN63XHmtPUAP0QcBrbgeaAcN7lgQPAthik6N355QD1hP9o3mrRAkVgCJycPjL6wbWsrgQmTBai0sry--g59qiXaQpq4AraJfnp53UoivkyrmRv81J8A"/><div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">location_on</span><span class="font-label-sm text-label-sm tracking-wide truncate max-w-[130px]">Barranquilla, Atlántico 🇨🇴</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Buscar" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant"><span class="material-symbols-outlined">search</span></button><button aria-label="Notificaciones" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant relative"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary"></span></button><button aria-label="Perfil de usuario" class="w-11 h-11 flex items-center justify-center rounded-full p-0.5 hover:ring-2 hover:ring-primary-container transition-all ml-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKnHOW6NCFE-pisORJYnZMpxuEBf4PZEFJkMdiXwbX1C50PpicvjdC6ma7rTowahdaVVVAkPsGi1wia-IHWtgtTGxoaxpn8rygTDwHAo4nB8SJG2oO8XQ--PwOePMVF4-KCns8i4sdAlQ_5jNmtWjDnOV83BCMtBgihPw3EJzSKPB7Ky5z13vGEQGMMKuOqdF4ML1eCG5WheigXC4TsQ0edIn0EaiHGlO3JUhRLe2f"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Greeting Header Section -->
+<section class="px-margin-mobile pt-space-sm pb-space-xs">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<div class="inline-flex items-center gap-1.5 bg-primary-fixed/60 text-on-primary-fixed px-3 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">31°C Soleado · Brisa del Río</span>
+</div>
+<div class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm bg-secondary-fixed/50 px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">air</span>
+<span>Vientos Alisios</span>
+</div>
+</div>
+<div class="mt-2">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight">
+        ¡Ajá, María! 🌴
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        ¿Qué quieres vivir hoy en Curramba la Bella?
+      </p>
+</div>
+</section>
+<!-- Interactive Search & Discovery -->
+<section class="px-margin-mobile mt-space-sm">
+<div class="relative flex items-center shadow-sm">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input aria-label="Buscar en Barranquilla" class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md rounded-full pl-11 pr-12 py-3 focus:outline-none focus:bg-surface-container transition-all" placeholder="Buscar monumentos, tours, comida costeña..." type="text"/>
+<button aria-label="Abrir filtros" class="absolute right-1.5 w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:opacity-90 active:scale-95 transition-transform" onclick="this.classList.toggle('rotate-90')">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Highlights / Stories Carousel -->
+<section class="mt-space-md">
+<div class="flex items-center justify-between px-margin-mobile mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Historias de la Arenosa</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Ver todo</span>
+</div>
+<div class="flex gap-space-sm overflow-x-auto px-margin-mobile no-scrollbar py-1">
+<!-- Story 1 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none text-left">
+<div class="w-16 h-16 rounded-full p-[2.5px] bg-gradient-to-tr from-primary-container via-tertiary to-secondary shadow-sm group-active:scale-95 transition-transform">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up dynamic shot of a Carnaval de Barranquilla dancer with a vibrant feathered headpiece and traditional marimonda costume details in saturated bright colors under golden sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW6BfbJyUL1fIZdYEtqMQCOvqgTIuKU6q2xmUoUNgdIw5aFywH82w8mX08HsT0n_vw2kmkY8rk1mtbr9lsijrm7U7R8kx6FPokhJRA3rEdJ1C5hYUx5k4CjYhvBPoHcvic5nOhwWtU7--hp76qR_11JzXYbsoBdDNyRqY-aT26e7aVZSscncZTVXSqDcwHaCLoHZ_MK5gjBjk3L4XlYqoRSlZXP2LKg0GQlBq95F54"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center w-16 truncate">Carnaval 365</span>
+</button>
+<!-- Story 2 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none text-left">
+<div class="w-16 h-16 rounded-full p-[2.5px] bg-gradient-to-tr from-secondary to-primary-container shadow-sm group-active:scale-95 transition-transform">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Pedestrian promenade along the Magdalena River at El Gran Malecon Barranquilla with green palm trees and bright tropical sunlight reflecting on gentle river water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeNorNLXj0cBk1o_kW3FOWeDVyPu8FSoOHiEkBBl06aqB0mYUMdnQuKY7r714pCeC7yIU6hYZtX7oHA1dIbMdvU1SAa3wdO3ztpx1xV-bUaGVmiACc26KRtsVm6AWzulHPTYActlE7iT_Yz05bzDsHT6fVHTOxVm7DUHw2mQkHk1Oskq2BZyWFvbt1s-d1bQh7CO4VF1iCupEJyJfkWbOS5j6QzeA-4RMsSqM_EDv_"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center w-16 truncate">El Malecón</span>
+</button>
+<!-- Story 3 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none text-left">
+<div class="w-16 h-16 rounded-full p-[2.5px] bg-gradient-to-tr from-outline-variant to-primary shadow-sm group-active:scale-95 transition-transform">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Neoclassical republican white villa architecture in Barrio El Prado Barranquilla with lush tropical gardens, bougainvillea flowers and deep arched front porches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXPnX5a3qSCNogkIPNEoD5PGZ-Bk6LTBvvKMxHoDvegPF6U5c4BrKBSfCFMxAU0uCSYVtF1-79M4xkR-sWSrUkBrdHq-ZYPSEM_E3lIiUTUvAkg6HPulvSBCh706oWMUgWHFmi3j27Y75Sn0V8xEgDS6uL1JwfS-B-u43Pw2OB9oOkrL2V8c2oScMkHIyLrV-08oC_DzxZoFInz7NLmOch2r3Rjh2d6C9d0Fu02eqf"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center w-16 truncate">El Prado</span>
+</button>
+<!-- Story 4 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none text-left">
+<div class="w-16 h-16 rounded-full p-[2.5px] bg-gradient-to-tr from-secondary via-secondary-container to-primary shadow-sm group-active:scale-95 transition-transform">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Long stone breakwater pier of Bocas de Ceniza stretching toward the Caribbean ocean horizon with turquoise and river-brown water colliding in sea spray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW5JBhxDn3nZeAoF9lKOSDFMJFFlUUlPlPSz7nY-jKIuxOhp8-7dBgU7Oy8M9z7P9KLNuiLvEFaMGoXCWII9uhVZRmYCz_pgT1hjGmhKnsr_0Y6kksrhvROJ5FS5Xa1yukvnrbNMg061cry6NJ0mqtZfBmWYneaTgns-IceAgXdGhu0S-EEMN8utDyxNjPcqZ0RjHT_uSWgQza5udJBKvNFf5JMWEOJH9vJdgWyEwB"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center w-16 truncate">Bocas Ceniza</span>
+</button>
+<!-- Story 5 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group focus:outline-none text-left">
+<div class="w-16 h-16 rounded-full p-[2.5px] bg-gradient-to-tr from-primary-container via-tertiary-container to-secondary shadow-sm group-active:scale-95 transition-transform">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant modern glass monument Ventana al Mundo in Barranquilla Colombia with primary colored mosaic panels glowing brilliantly under a blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsis_xWGopyFm0JR2I1O9ceec8NB3Wq9uBA6qTQN4RfPIEKohcl6X9yVRpgYU4VEChwTvBP_c9XA-mCCdHl1kDgfr2FrrJguyBW_O2QZmTceI-9Dju7icRFRGs8cwLoUmcP6EYBTEl9QoZnRrACvRhkEeRm7_hck5WyKZH85zNLbYPDCkR9FiVBvSFzwaavh6R_hck5QBN4TPDL_rQGNtqBFOQ2HqLPQQW05xkbW4W"/>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center w-16 truncate">Ventana Mundo</span>
+</button>
+</div>
+</section>
+<!-- Hero Highlighted Banner -->
+<section class="px-margin-mobile mt-space-md">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-surface-container group">
+<!-- Background Image Container -->
+<div class="w-full h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Panoramic scenic golden hour sunset at Gran Malecon del Rio Barranquilla with the Magdalena river shining like molten gold, silhouette of strolls and modern food pavilions" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTzB3kVPQgodmupgelskM9qRLfnVqNWhKuw7xeT2tQ1VYuTug3SXJfi9JATPzPN8jaNIq1gQewdMD16bAPRDe-S5PXTYarPQkE9lnlz-F-CUiQll73LH6qVmJKX-Ed-G0H-nYnASLJBN6LUFTSrhf-7o2M7XYq2HRXGUiaW6XnwqvAeKWlSGG_w8LXSJCf2AD6WpHc7mT3mWY0aB6vT_-ompPvZTkfYiTAM65tXMhG')"></div>
+<!-- Scrim overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/95 via-on-background/40 to-transparent"></div>
+<!-- Top Badges -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="bg-tertiary text-on-tertiary font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+          Imperdible #1
+        </span>
+<button aria-label="Guardar en favoritos" class="w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary flex items-center justify-center hover:bg-surface-container-lowest active:scale-90 transition-transform shadow-sm" onclick="const icon = this.querySelector('span'); icon.style.fontVariationSettings = icon.style.fontVariationSettings.includes('1') ? '\'FILL\' 0' : '\'FILL\' 1';">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Content over Scrim -->
+<div class="absolute bottom-0 inset-x-0 p-space-md text-surface-bright flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 bg-surface-container-lowest/20 backdrop-blur-md px-2 py-0.5 rounded-full text-surface-bright font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="text-surface-variant">(14.2k)</span>
+</div>
+<span class="text-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+            A 1.8 km de ti
+          </span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-white font-bold leading-tight">
+            Gran Malecón del Río
+          </h2>
+<p class="font-body-sm text-body-sm text-surface-dim line-clamp-1 mt-0.5">
+            El sitio turístico más visitado de Colombia a orillas del Magdalena.
+          </p>
+</div>
+<div class="pt-1">
+<button class="w-full bg-primary-container text-on-primary-container font-label-lg text-label-lg py-3 px-5 rounded-full flex items-center justify-center gap-2 font-bold shadow-sm active:scale-95 transition-all">
+<span>Ver detalles y atardecer</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="mt-space-lg px-margin-mobile">
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+        Categorías Sugeridas
+      </h2>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Explorar todo</span>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<!-- Monumentos -->
+<button class="flex flex-col items-center gap-1.5 focus:outline-none group">
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed/80 text-on-primary-fixed flex items-center justify-center group-hover:scale-105 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-3">Monu- mentos</span>
+</button>
+<!-- Ruta Carnaval -->
+<button class="flex flex-col items-center gap-1.5 focus:outline-none group">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center group-hover:scale-105 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-3">Ruta Carnaval</span>
+</button>
+<!-- Sabores Costeños -->
+<button class="flex flex-col items-center gap-1.5 focus:outline-none group">
+<div class="w-12 h-12 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center group-hover:scale-105 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-3">Comida Costeña</span>
+</button>
+<!-- Ecoturismo Río -->
+<button class="flex flex-col items-center gap-1.5 focus:outline-none group">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center group-hover:scale-105 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[24px]">kayaking</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-3">Río &amp; Selva</span>
+</button>
+<!-- Vida Nocturna -->
+<button class="flex flex-col items-center gap-1.5 focus:outline-none group">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high text-on-surface-variant flex items-center justify-center group-hover:scale-105 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[24px]">nightlife</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-3">Rumba Caribe</span>
+</button>
+</div>
+</section>
+<!-- Top Attractions Cards Carousel -->
+<section class="mt-space-lg">
+<div class="flex items-center justify-between px-margin-mobile mb-3">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+          Top Atractivos de Barranquilla
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Puntos emblemáticos que no te puedes perder
+        </p>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Desplazar izquierda" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-label="Desplazar derecha" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Swipe Cards -->
+<div class="flex gap-space-md overflow-x-auto px-margin-mobile no-scrollbar pb-2">
+<!-- Card 1: Ventana al Mundo -->
+<div class="w-[260px] flex-shrink-0 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group">
+<div class="relative w-full h-36 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Monumento Ventana al Mundo towering glass sculpture in primary colors against deep blue sky in northern Barranquilla Colombia wide angle artistic perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsFYA13ZHjtJ6sbiFUDr2e8ts96eus0AHhUjmgwB0s3OpA9ScCB44qvS_VTr86h3U2_mKb70Bs9_IgpwPCRHu7D7E3e1Gk-2E8ZK6j9Is2BM3dIYBRjRK1gkSqOfTrC20jYpEre6DuC1PeRyAabxCyUfcWMNf7_EttPH3t45WJfgpcw3_bufYWugR5eBHDwwHYjJ2f5AdTzsfyj8e_umJVXCTllCYuQlNw17T6ttCC"/>
+<div class="absolute top-2 left-2 bg-secondary/85 backdrop-blur-sm text-on-secondary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+            Arte Moderno
+          </div>
+<button aria-label="Favorito" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-2">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-0.5">
+<span>Rotonda de la 110</span>
+<span class="flex items-center gap-0.5 text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 font-bold">
+              Ventana al Mundo
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Monumento de 47 metros con miles de vidrios de colores que narran la historia costeña.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Acceso Libre</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Barrio El Prado -->
+<div class="w-[260px] flex-shrink-0 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group">
+<div class="relative w-full h-36 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Sunlit streetscape of Barrio El Prado Barranquilla historic residential district with grand white balconies, tropical foliage and classic architectural grandeur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCNNlk_WnMgiRJrJvsVIZequkKCt-iHZxY37f743oDUM0Anaek_9aJ7MVng0b4bzdeapqc3n22hd5QatIHE6qbFqmw9RGSBqDMAVWXZWIGIDRp4ARIUBM0d6SvMCPbu6nP_y5a4ZGS48RFV32m_Jy-ouVdJAL03SaWmD2WEhBvb5e1aFP7lfvMyowRe8t1W8wYklhK_LtYEf3x22AUd35S_Z_n2m4MB7S3xse7c5t9"/>
+<div class="absolute top-2 left-2 bg-primary/85 backdrop-blur-sm text-on-primary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+            Patrimonio
+          </div>
+<button aria-label="Favorito" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-2">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-0.5">
+<span>Sector Histórico</span>
+<span class="flex items-center gap-0.5 text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.7
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 font-bold">
+              Barrio El Prado
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Casonas republicanas y neoclásicas con historias centenarias y cafés boutique.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Walking Tour</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Bocas de Ceniza -->
+<div class="w-[260px] flex-shrink-0 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group">
+<div class="relative w-full h-36 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Bocas de Ceniza Barranquilla scenic view of the exact point where Magdalena river brown waters merge with deep blue Caribbean sea, rocky breakwater and small train railway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFJfnojYrjYVOubZp52BRRck8SEj6K-6etc4ZHVNIrgUAhhe5F0xhWWQYR9Fk11onZFAn9SEI8EnMhoJw2OERD6iIrcJ5JURxcvDTzXUWzj6fo-6wR0GXYJpSOYvb_wGbw45SbIbfipNCEyK9UhAK2c9s5jztUGXWUqpi8B3h1zrogkUBKyERlPerQ4yF3Z3KJGwcK0oiXoH5woa8Fikqv1vXj5YOtA9wnqIBlbK_f"/>
+<div class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+            Naturaleza
+          </div>
+<button aria-label="Favorito" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-2">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-0.5">
+<span>Las Flores</span>
+<span class="flex items-center gap-0.5 text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 font-bold">
+              Bocas de Ceniza
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              El mágico abrazo entre la corriente del Magdalena y las olas bravas del mar Caribe.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Tren y Lancha</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Aleta del Tiburón -->
+<div class="w-[260px] flex-shrink-0 bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col group">
+<div class="relative w-full h-36 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Ventana de Campeones shark fin glass monument illuminated in red and white at night overlooking the Magdalena river bridge in Barranquilla" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGCo8jMKV6Q3cP0SQzXWCZ4aWdn0XtlHiuCp1jXe91COgHbkizG21LBssPxOSz8ydUF77_YAats0Fv_wqh6Pg6wukVsjreJm8dckoS97iCU-fW5hX2fFgQiB0Z-UN_QydZ-ym7h0xvEkVMHZ9nBSI1fPRpvXhYI6PLYOvW4n1bsQqjWcJBdRwjPp3CQVIpgPKMXugPQO1P9zU5EvVPFv_HI_CWPc2dhHYCqjTeXwen"/>
+<div class="absolute top-2 left-2 bg-tertiary-container text-on-tertiary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+            Pasión Junior
+          </div>
+<button aria-label="Favorito" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-2">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mb-0.5">
+<span>Isla La Loma</span>
+<span class="flex items-center gap-0.5 text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 font-bold">
+              Ventana de Campeones
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              La famosa 'Aleta del Tiburón', tributo a las hazañas deportivas de la ciudad.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Fotospot</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Local Map Discovery Tile -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="bg-surface-container-low rounded-2xl p-space-md flex flex-col gap-3 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">map</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Mapa en Tiempo Real</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Ver rutas activas</span>
+</div>
+<div class="w-full h-36 rounded-xl bg-cover bg-center relative overflow-hidden shadow-inner flex items-end p-2.5" data-location="Gran Malecon del Rio, Barranquilla, Colombia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1ZmjiZSgjtlg2HY5PdBTz-o_gk1ela-XX4i5TkNnkShAe7WPIkCAV4hFbSJqYmFrw9xgbuPsBdzCdw7hRtwrNac2kLG1fZQBDSHkAklTrg28FgIIbm1Lg3UUllWT6ML15STIhD_CL7MHXR93n9J31Xhyhxok8LRGDqRTMHqQqxZat41i4m8hXECEaa0bn-_gUwM2RJ1xPLpZr8ToYLitKAAyihgv0vFSuzPA4iZ42')">
+<div class="bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center justify-between w-full shadow-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface">18 experiencias cerca de ti ahora</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Abrir mapa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Events in Town -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+          Próximos Eventos en la Ciudad
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Música, tambores y gozadera currambera
+        </p>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-0.5">
+<span>Agenda</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Event 1: Atardecer Sonoro Malecon -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center gap-space-sm group hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-16 rounded-lg bg-primary-fixed flex flex-col items-center justify-center text-center flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant uppercase tracking-wider font-bold">SÁB</span>
+<span class="font-headline-md text-headline-md text-on-primary-fixed leading-none font-bold">14</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant">OCT</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[13px]">music_note</span>
+<span class="font-bold">Concierto al Río</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface truncate font-bold">
+            Atardecer de Jazz &amp; Cumbia en el Malecón
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Sector Caimán del Río · 5:00 PM · Entrada Libre
+          </p>
+</div>
+<button aria-label="Ver evento" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant flex-shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Event 2: Noche de Guacherna Cultural -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center gap-space-sm group hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-16 rounded-lg bg-tertiary-fixed flex flex-col items-center justify-center text-center flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant uppercase tracking-wider font-bold">VIE</span>
+<span class="font-headline-md text-headline-md text-on-tertiary-fixed leading-none font-bold">20</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">OCT</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[13px]">nightlife</span>
+<span class="font-bold">Tradición Viva</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface truncate font-bold">
+            Noche de Guacherna Cultural y Faroles
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Carrera 44 con Calle 72 · 7:30 PM · Muestras folclóricas
+          </p>
+</div>
+<button aria-label="Ver evento" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant flex-shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Event 3: Feria Gastronómica Sabor Bajero -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center gap-space-sm group hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-16 rounded-lg bg-secondary-fixed flex flex-col items-center justify-center text-center flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant uppercase tracking-wider font-bold">DOM</span>
+<span class="font-headline-md text-headline-md text-on-secondary-fixed leading-none font-bold">22</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">OCT</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[13px]">restaurant</span>
+<span class="font-bold">Gastronomía</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface truncate font-bold">
+            Feria Gastronómica Sabor Bajero
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Plaza de la Paz · 11:00 AM · Arepas de huevo y más
+          </p>
+</div>
+<button aria-label="Ver evento" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant flex-shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Curramba Tip of the Day Pill -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="bg-gradient-to-r from-primary-fixed/40 via-surface-container to-secondary-fixed/40 p-space-md rounded-2xl flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">tips_and_updates</span>
+</div>
+<div class="flex-1">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">¿Sabías esto?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+          A Barranquilla la llaman 'La Puerta de Oro de Colombia' porque por aquí entró la aviación, la radio y el fútbol al país.
+        </p>
+</div>
+</div>
+</section>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-sm max-w-md mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] h-full transition-all gap-0.5 text-primary font-bold" data-path="explorar" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Explorar</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-full text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="carnaval" href="#"><span class="material-symbols-outlined text-[24px]">celebration</span><span class="font-label-sm text-label-sm">Carnaval</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-full text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="sabores" href="#"><span class="material-symbols-outlined text-[24px]">restaurant</span><span class="font-label-sm text-label-sm">Sabores</span></a><a class="flex flex-col items-center justify-center min-w-[64px] h-full text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="mis-tours" href="#"><span class="material-symbols-outlined text-[24px]">confirmation_number</span><span class="font-label-sm text-label-sm">Mis Tours</span></a></div></nav></body></html>
